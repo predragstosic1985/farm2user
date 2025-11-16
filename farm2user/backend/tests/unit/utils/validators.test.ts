@@ -10,7 +10,7 @@ import {
     isValidFarmName,
     isValidText,
     isValidRating,
-} from '@/utils/validators';
+} from '../../../src/utils/validators';
 
 describe('Validator Utilities', () => {
     describe('isValidEmail', () => {

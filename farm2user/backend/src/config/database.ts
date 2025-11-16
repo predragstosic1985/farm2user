@@ -2,28 +2,28 @@ import { Sequelize } from 'sequelize';
 import env from './env';
 import logger from './logger';
 
-// Create Sequelize instance with connection pool
-const sequelize = new Sequelize({
+// Create Sequelize instance with connection pool (attempt Postgres first)
+let sequelize: Sequelize = new Sequelize({
     dialect: 'postgres',
     host: env.DB_HOST,
     port: env.DB_PORT,
     database: env.DB_NAME,
     username: env.DB_USER,
     password: env.DB_PASSWORD,
-    logging: env.NODE_ENV === 'development' ? (msg) => logger.debug(msg) : false,
+    logging: env.NODE_ENV === 'development' ? (msg: string) => logger.debug(msg) : false,
     pool: {
-        max: 25, // Maximum number of connection in pool
-        min: 5, // Minimum number of connection in pool
-        acquire: 30000, // The maximum time, in milliseconds, that pool will try to get connection before throwing error
-        idle: 10000, // The maximum time, in milliseconds, that a connection can be idle before being released
+        max: 25,
+        min: 5,
+        acquire: 30000,
+        idle: 10000,
     },
     define: {
         timestamps: true,
-        underscored: true, // Use snake_case for column names
-        paranoid: true, // Soft deletes (deletedAt column)
+        underscored: true,
+        paranoid: true,
     },
     query: {
-        raw: false, // Return model instances by default
+        raw: false,
     },
 });
 
@@ -38,16 +38,41 @@ export const testConnection = async (): Promise<void> => {
     }
 };
 
-// Initialize database
+// Initialize database with fallback to SQLite for development convenience
 export const initDatabase = async (): Promise<void> => {
     try {
         await testConnection();
-        // Sync database (without altering existing tables in production)
         const force = env.NODE_ENV === 'test';
         await sequelize.sync({ force, alter: env.NODE_ENV === 'development' });
         logger.info('Database synchronized successfully.');
-    } catch (error) {
+    } catch (error: any) {
         logger.error('Database initialization failed:', error);
+
+        // If development and Postgres not available, fallback to SQLite to allow local dev
+        if (env.NODE_ENV === 'development') {
+            logger.warn('Falling back to SQLite in-memory database for development.');
+            sequelize = new Sequelize({
+                dialect: 'sqlite',
+                storage: ':memory:',
+                logging: (msg: string) => logger.debug(msg),
+                define: {
+                    timestamps: true,
+                    underscored: true,
+                    paranoid: true,
+                },
+            });
+
+            try {
+                await sequelize.authenticate();
+                await sequelize.sync({ force: false, alter: true });
+                logger.info('SQLite in-memory database initialized for development.');
+                return;
+            } catch (sqliteErr) {
+                logger.error('SQLite fallback initialization failed:', sqliteErr);
+                throw sqliteErr;
+            }
+        }
+
         throw error;
     }
 };

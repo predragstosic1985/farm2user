@@ -1,0 +1,100 @@
+2025-11-16 15:28:35 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:30:41 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:31:55 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:32:13 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:33:01 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:33:01 [[31merror[39m]: [31mDatabase initialization failed:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:33:47 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:33:47 [[31merror[39m]: [31mDatabase initialization failed:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:38:29 [[31merror[39m]: [31mUnable to connect to the database:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}
+2025-11-16 15:38:29 [[31merror[39m]: [31mDatabase initialization failed:[39m {
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED"
+  },
+  "original": {
+    "code": "ECONNREFUSED"
+  },
+  "stack": "SequelizeConnectionRefusedError\n    at Client._connectionCallback (C:\\dev\\farm2user\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:184:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorEvent (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\client.js:346:19)\n    at Connection.emit (node:events:524:28)\n    at Socket.reportStreamError (C:\\dev\\farm2user\\farm2user\\node_modules\\pg\\lib\\connection.js:57:12)\n    at Socket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+}

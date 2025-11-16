@@ -4,7 +4,7 @@ import {
     comparePassword,
     isPasswordStrong,
     getPasswordFeedback,
-} from '@/utils/password';
+} from '../../../src/utils/password';
 
 describe('Password Utilities', () => {
     const strongPassword = 'SecurePass123!';

@@ -6,7 +6,7 @@ import {
     calculateTotalAmount,
     applyDiscount,
     calculatePercentage,
-} from '@/utils/calculations';
+} from '../../../src/utils/calculations';
 
 describe('Calculation Utilities', () => {
     describe('calculateDeposit', () => {

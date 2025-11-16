@@ -6,8 +6,8 @@ import {
     verifyRefreshToken,
     generateTokenPair,
     decodeToken,
-} from '@/utils/jwt';
-import { InvalidTokenError, TokenExpiredError } from '@/utils/errors';
+} from '../../../src/utils/jwt';
+import { InvalidTokenError, TokenExpiredError } from '../../../src/utils/errors';
 
 describe('JWT Utilities', () => {
     const testUserId = '550e8400-e29b-41d4-a716-446655440000';

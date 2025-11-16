@@ -16,7 +16,7 @@ export const errorHandler = (
     if (error instanceof AppError) {
         logger.warn(`[${error.code}] ${error.message}`, { statusCode: error.statusCode });
 
-        const response: ApiResponse = {
+        const response: ApiResponse & { code?: string } = {
             success: false,
             message: error.message,
             code: error.code,
@@ -34,7 +34,7 @@ export const errorHandler = (
         stack: error.stack,
     });
 
-    const response: ApiResponse = {
+    const response: ApiResponse & { code?: string } = {
         success: false,
         message: 'Internal server error',
         code: 'INTERNAL_SERVER_ERROR',

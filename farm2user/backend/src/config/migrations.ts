@@ -2,16 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import sequelize from './database';
 import logger from './logger';
+import type { Sequelize } from 'sequelize';
 
 /**
  * Database migration runner
  * Runs all .ts migration files in migrations/ directory
  */
-
 interface Migration {
     name: string;
-    up: (sequelize: typeof sequelize) => Promise<void>;
-    down: (sequelize: typeof sequelize) => Promise<void>;
+    up: (sequelize: Sequelize) => Promise<void>;
+    down: (sequelize: Sequelize) => Promise<void>;
 }
 
 const migrationsDir = path.join(process.cwd(), 'migrations');

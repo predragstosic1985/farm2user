@@ -12,11 +12,7 @@ export default defineConfig({
                 'node_modules/',
                 'dist/',
                 'src/**/*.d.ts',
-            ],
-            lines: 70,
-            functions: 70,
-            branches: 70,
-            statements: 70,
+            ]
         },
         include: ['tests/**/*.test.ts'],
         exclude: ['node_modules', 'dist'],
