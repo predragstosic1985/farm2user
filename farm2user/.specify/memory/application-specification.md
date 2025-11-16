@@ -317,7 +317,68 @@ Super admin configures platform-wide settings: commission rates, deposit percent
 
 ---
 
-### Edge Cases
+## Clarifications & Decisions
+
+### CR-001: Agricultural Database Validation
+**Question**: How should the system validate farm registration numbers for "Registered Agricultural Farm" designation?
+
+**Best-Guess Solution**: Implement flexible validation:
+1. Accept registration number format (varies by country/region)
+2. Store registration number with verification status: pending/verified/failed
+3. Support manual admin review process for verification
+4. For MVP: Mark as "Pending Verification" until admin confirms
+5. Future: Integrate with official agricultural registry APIs when available
+
+**Decision Ratified**: Use manual admin verification in MVP; plan API integration in Phase 4
+
+---
+
+### CR-002: Payment Processing Integration
+**Question**: Since deposit is 30% upfront, how should payment be handled during MVP (no payment gateway)?
+
+**Best-Guess Solution**: Implement payment framework with mock provider:
+1. Create reservation with "Pending Payment" status
+2. Display deposit amount with placeholder payment button
+3. Generate shareable payment invoice/receipt (PDF/email)
+4. Admin can manually mark payment as received via admin panel
+5. Future Phase 3: Replace mock with Stripe/PayPal integration
+6. Payment status tracked in Payment entity with transaction_id for future gateway
+
+**Decision Ratified**: Use mock payment system with manual admin confirmation in MVP; build payment entity structure for future integration
+
+---
+
+### CR-003: In-App Messaging vs. Email/Phone Contact
+**Question**: User Story 4 mentions "in-app messaging" but also phone/email - which should MVP support?
+
+**Best-Guess Solution**: MVP supports all three with priority ranking:
+1. **Email** (Primary): Reliable, familiar, no real-time requirement
+2. **Phone** (Secondary): Display farmer's phone; allow copy-to-call
+3. **In-App Messaging** (Future Phase 4): Real-time messaging requires additional infrastructure
+
+**Current Implementation**: Show farmer contact options (phone, email) on order detail page. In-app messaging button deferred to Phase 4.
+
+**Decision Ratified**: Email + phone for MVP; defer real-time messaging to Phase 4
+
+---
+
+### CR-004: Automatic Harvest Date Transition
+**Question**: FR-018 mentions automatic transition from "Ready Soon" to "Ready Now" - what triggers this?
+
+**Best-Guess Solution**: Implement scheduled transition system:
+1. **Daily Background Job** (runs at 00:00 UTC): Check all FutureYield entries
+2. **Trigger Logic**: If current date >= expected_date AND status = "ready_soon", change to "ready_now"
+3. **Fallback**: Customer can manually update status during checkout if expected date has passed
+4. **Notification**: Farmer receives email when product transitions to "Ready Now"
+5. **Real-time Updates**: Dashboard reflects change within 1 minute for active users
+
+**Implementation**: Use Node.js cron job or backend scheduled task; monitor for missed transitions in admin health dashboard.
+
+**Decision Ratified**: Daily scheduled job at midnight UTC with manual override capability
+
+---
+
+## Edge Cases
 
 - **What happens when** multiple farmers have same product and customer needs to compare prices?
   → System sorts by price, availability date, and farmer rating; enables side-by-side comparison
@@ -377,7 +438,7 @@ Super admin configures platform-wide settings: commission rates, deposit percent
 - **FR-015**: System MUST allow farmers to add multiple future yields for same product with: expected quantity, expected date, planting stage
 - **FR-016**: System MUST display 6 planting stage options: "Just Planted", "Growing", "Ready Soon", "Ready Now", "Harvesting", "Finished"
 - **FR-017**: System MUST show planting stage badge with emoji/visual indicator on product cards
-- **FR-018**: System MUST automatically transition "Ready Soon" to "Ready Now" on expected harvest date
+- **FR-018**: System MUST automatically transition "Ready Soon" to "Ready Now" on expected harvest date [NEEDS CLARIFICATION: automatic transition requires scheduled job - define frequency (hourly/daily) and fallback approach]
 - **FR-019**: System MUST prevent farmer from reducing current quantity below current reservations
 - **FR-020**: System MUST show product availability countdown: "X units available", "Last X units", "Out of stock"
 - **FR-021**: System MUST prevent deletion of products with active reservations; suggest archiving instead
