@@ -33,7 +33,7 @@
         "sequelize": "^6.35.1",
         "typescript": "^5.3.3",
         "bcryptjs": "^2.4.3",
-        "jsonwebtoken": "^9.1.2",
+        "jsonwebtoken": "^9.0.0",
         "dotenv": "^16.3.1",
         "winston": "^3.11.0",
         "cors": "^2.8.5",
