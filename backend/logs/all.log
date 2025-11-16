@@ -122,3 +122,227 @@
 2025-11-16 15:38:29 [[32minfo[39m]: [32mEnvironment: development[39m 
 2025-11-16 15:38:29 [[32minfo[39m]: [32mDatabase: farm2door_dev@localhost:5432[39m 
 2025-11-16 15:38:29 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:18:54 [[31merror[39m]: [31mUnable to connect to the database: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:18:54 [[31merror[39m]: [31mDatabase initialization failed: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:18:54 [[33mwarn[39m]: [33mFalling back to SQLite in-memory database for development.[39m 
+2025-11-16 16:18:54 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:18:54 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:18:54 [[32minfo[39m]: [32mSQLite in-memory database initialized for development.[39m 
+2025-11-16 16:18:54 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:18:54 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:18:54 [[32minfo[39m]: [32mDatabase: farm2door_dev@localhost:5432[39m 
+2025-11-16 16:18:54 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:50:53 [[31merror[39m]: [31mUnable to connect to the database: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:50:53 [[31merror[39m]: [31mDatabase initialization failed: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:50:53 [[33mwarn[39m]: [33mFalling back to SQLite in-memory database for development.[39m 
+2025-11-16 16:50:53 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:50:53 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:50:53 [[32minfo[39m]: [32mSQLite in-memory database initialized for development.[39m 
+2025-11-16 16:50:53 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:50:53 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:50:53 [[32minfo[39m]: [32mDatabase: farm2door_dev@localhost:5432[39m 
+2025-11-16 16:50:53 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:51:18 [[31merror[39m]: [31mUnable to connect to the database: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:51:18 [[31merror[39m]: [31mDatabase initialization failed: password authentication failed for user "postgres"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 104,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"postgres\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:51:18 [[33mwarn[39m]: [33mFalling back to SQLite in-memory database for development.[39m 
+2025-11-16 16:51:18 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:51:18 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:51:18 [[32minfo[39m]: [32mSQLite in-memory database initialized for development.[39m 
+2025-11-16 16:51:18 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:51:18 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:51:18 [[32minfo[39m]: [32mDatabase: farm2door_dev@localhost:5432[39m 
+2025-11-16 16:51:18 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:52:30 [[31merror[39m]: [31mUnable to connect to the database: password authentication failed for user "stole"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 101,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 101,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"stole\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:52:30 [[31merror[39m]: [31mDatabase initialization failed: password authentication failed for user "stole"[39m {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 101,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "original": {
+    "length": 101,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28P01",
+    "file": "auth.c",
+    "line": "320",
+    "routine": "auth_failed"
+  },
+  "stack": "SequelizeConnectionError: password authentication failed for user \"stole\"\n    at Client._connectionCallback (C:\\dev\\farm2user\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:196:24)\n    at Client._handleErrorWhileConnecting (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:336:19)\n    at Client._handleErrorMessage (C:\\dev\\farm2user\\node_modules\\pg\\lib\\client.js:356:19)\n    at Connection.emit (node:events:524:28)\n    at C:\\dev\\farm2user\\node_modules\\pg\\lib\\connection.js:116:12\n    at Parser.parse (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\parser.ts:103:9)\n    at Socket.<anonymous> (C:\\dev\\farm2user\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:524:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-11-16 16:52:30 [[33mwarn[39m]: [33mFalling back to SQLite in-memory database for development.[39m 
+2025-11-16 16:52:30 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:52:30 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:52:30 [[32minfo[39m]: [32mSQLite in-memory database initialized for development.[39m 
+2025-11-16 16:52:30 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:52:30 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:52:30 [[32minfo[39m]: [32mDatabase: farm2user@localhost:5432[39m 
+2025-11-16 16:52:30 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:52:52 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32mDatabase connection has been established successfully.[39m 
+2025-11-16 16:52:52 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32mDatabase synchronized successfully.[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32mDatabase: farm2user@localhost:5432[39m 
+2025-11-16 16:52:52 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
+2025-11-16 16:53:02 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32mDatabase connection has been established successfully.[39m 
+2025-11-16 16:53:02 [[37mdebug[39m]: [37mExecuting (default): SELECT 1+1 AS result[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32mDatabase synchronized successfully.[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32m🚀 Server running on port 3000[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32mEnvironment: development[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32mDatabase: farm2user@localhost:5432[39m 
+2025-11-16 16:53:02 [[32minfo[39m]: [32mHealth check: http://localhost:3000/api/health[39m 
