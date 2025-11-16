@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+import jwt, { Secret } from 'jsonwebtoken';
 import env from '@/config/env';
 import { AuthPayload, RefreshPayload } from '@/types';
 import { InvalidTokenError, TokenExpiredError } from './errors';
@@ -21,10 +21,10 @@ export const generateAccessToken = (
             email,
             userType,
         },
-        env.JWT_SECRET,
+        env.JWT_SECRET as Secret,
         {
-            expiresIn: env.JWT_EXPIRES_IN,
-        }
+            expiresIn: env.JWT_EXPIRES_IN as jwt.SignOptions['expiresIn'],
+        } as jwt.SignOptions
     );
 };
 
@@ -38,10 +38,10 @@ export const generateRefreshToken = (userId: string): string => {
         {
             userId,
         },
-        env.JWT_REFRESH_SECRET,
+        env.JWT_REFRESH_SECRET as Secret,
         {
-            expiresIn: env.JWT_REFRESH_EXPIRES_IN,
-        }
+            expiresIn: env.JWT_REFRESH_EXPIRES_IN as jwt.SignOptions['expiresIn'],
+        } as jwt.SignOptions
     );
 };
 
@@ -52,7 +52,7 @@ export const generateRefreshToken = (userId: string): string => {
  */
 export const verifyAccessToken = (token: string): AuthPayload => {
     try {
-        const decoded = jwt.verify(token, env.JWT_SECRET) as AuthPayload;
+        const decoded = jwt.verify(token, env.JWT_SECRET as Secret) as AuthPayload;
         return decoded;
     } catch (error) {
         if (error instanceof jwt.TokenExpiredError) {
@@ -69,7 +69,7 @@ export const verifyAccessToken = (token: string): AuthPayload => {
  */
 export const verifyRefreshToken = (token: string): RefreshPayload => {
     try {
-        const decoded = jwt.verify(token, env.JWT_REFRESH_SECRET) as RefreshPayload;
+        const decoded = jwt.verify(token, env.JWT_REFRESH_SECRET as Secret) as RefreshPayload;
         return decoded;
     } catch (error) {
         if (error instanceof jwt.TokenExpiredError) {
