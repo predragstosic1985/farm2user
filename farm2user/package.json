@@ -1,0 +1,32 @@
+{
+    "name": "farm2door-monorepo",
+    "version": "1.0.0",
+    "description": "Farm2Door - Connecting local farmers with bio-product customers",
+    "private": true,
+    "workspaces": [
+        "backend",
+        "frontend"
+    ],
+    "scripts": {
+        "dev": "npm run dev --workspaces",
+        "build": "npm run build --workspaces",
+        "test": "npm run test --workspaces",
+        "test:all": "npm run test:all --workspaces",
+        "test:ui": "npm run test:ui --workspaces",
+        "test:coverage": "npm run test:coverage --workspaces",
+        "lint": "npm run lint --workspaces",
+        "lint:fix": "npm run lint:fix --workspaces",
+        "format": "npm run format --workspaces",
+        "type-check": "npm run type-check --workspaces",
+        "clean": "rm -rf backend/dist frontend/dist backend/node_modules frontend/node_modules node_modules"
+    },
+    "keywords": [
+        "farm",
+        "agriculture",
+        "organic",
+        "ecommerce",
+        "bio-products"
+    ],
+    "author": "",
+    "license": "MIT"
+}
